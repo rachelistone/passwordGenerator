@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>about</title>
-    <link rel="stylesheet" href="generator/style.html">
-</head>
+{% extends 'generator/base.html' %}
+{% block content %}
 <body>
-    <h1>About the website</h1>
-    <p>these website provides you a random password.<br>
-    it letting you select the length and the characters of the password.</p>
+    <div class="container">
+        <h1>About the website</h1>
+        <p>these website provides you a random password.<br>
+        it letting you select the length and the characters of the password.</p>
+        <a href="{% url 'home' %}">start</a>
+    </div>
 </body>
 </html>
+{% endblock %}
